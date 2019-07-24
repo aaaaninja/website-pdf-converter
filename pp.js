@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
-const clip_a_href = targetUrl => targetUrl.replace(/^https?:\/\/(.*?)(?:\/)/, "") // ↓ => "/maniax/work/=/product_id/RJ258698.html";
+
+const clip_a_href = targetUrl => targetUrl.replace(/^https?:\/\/(.*?)(?:\/)/, "") // ドメイン部より後ろを全部引っこ抜く
 
 const TARGET_URL = "https://www.dlsite.com/maniax/work/=/product_id/RJ258698.html"
-
 const page_width = 1920;
 
 (async () => {
